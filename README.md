@@ -19,8 +19,8 @@ Follow these steps to build and run the application using Docker:
 First, clone this repository to your local machine:
 
 ```bash
-git clone <repository-url>
-cd <repository-directory>
+git clone https://github.com/GwenDumoulin/test-evs.git
+cd test-evs
 ```
 
 ### 2. Build and Start the Containers
