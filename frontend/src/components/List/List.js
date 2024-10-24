@@ -8,6 +8,7 @@ function List() {
   const items = useSelector((state) => state.items.items)
   const status = useSelector((state) => state.items.status)
 
+  // Fetch items only once, when the component loads
   useEffect(() => {
     if (status === 'idle') {
       dispatch(fetchItems())

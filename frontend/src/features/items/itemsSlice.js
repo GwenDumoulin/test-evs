@@ -1,12 +1,12 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 
-// Fetch items from backend
+// Thunk action to fetch items from backend
 export const fetchItems = createAsyncThunk('items/fetchItems', async () => {
   const response = await fetch('http://localhost:3000/api/items')
   return response.json()
 })
 
-// Add a new item to the backend
+// Thunk action to add a new item to the backend
 export const addItem = createAsyncThunk('items/addItem', async (newItem) => {
   const response = await fetch('http://localhost:3000/api/items', {
     method: 'POST',
