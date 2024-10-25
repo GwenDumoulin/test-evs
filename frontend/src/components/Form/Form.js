@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux'
 import { addItem } from '../../features/items/itemsSlice'
+import '../../App.css'
 
 function Form() {
   const dispatch = useDispatch()

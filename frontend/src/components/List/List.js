@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchItems } from '../../features/items/itemsSlice'
 import Form from '../Form/Form'
+import '../../App.css'
 
 function List() {
   const dispatch = useDispatch()
